@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stock Details</title>
+</head>
+<body>
+    <div id="inputs">
+        <div>Product code
+            <input id="productcode" name="Product Code" />
+        </div><br>
+        <div>Product Name
+            <input id="productname" name="Product Name" />
+        </div><br>
+        <div>Product Qty
+            <input id="productqty" name="Product Qty" />
+        </div><br>
+        <div>Product expdate
+            <input id="productdate" name="Product Expdate" type="date" value=""
+            min="1997-01-01" max="2030-12-31" />
+        </div><br>
+
+        <div>
+            <input type="submit" id="saveBtn" value="Add" onclick="addProduct()" />
+            <input type="submit" id="updateBtn" value="update" onclick="updateProduct()" />
+            <input type="submit" id="toggleBtn" value="show" onclick="showTask()" />
+            <input type="submit" id="toggleBtn" value="hide" onclick="hideTask()" />
+            
+        </div><br>
+    </div>
+<!-- changed these two divs -->
+    <div id="header-row">        
+        <div class="row" style="display:flex; ">
+            <div class="col" style="width:10%;">stock code</div>
+            <div class="col" style="width:10%;">stock Name</div>
+            <div class="col" style="width:10%;">stock qty</div>            
+            <div class="col" style="width:10%;">stock expiry date</div>
+            <div class="col" style="width:10%;">Action</div>
+        </div>
+    </div>
+
+    <div id="result-row">
+
+    </div> 
+
+    <script src="index.js"></script>
+</body>
+</html>
+
